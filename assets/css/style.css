@@ -41,6 +41,7 @@ a {
 #nav_lg_md ul li a {
   color: rgb(49, 79, 185);
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 /* nav_sm_xs */
@@ -88,7 +89,13 @@ a {
 }
 
 .contenuti {
-  line-height: 50px;
+  line-height: 20px;
+  /* text-align: center; */
+  padding: 0 20px;
+}
+
+h2{
+  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -101,8 +108,10 @@ h2 a{
   color: red;
 }
 
-.contenuti p a {
+.contenuti a:not(.ticket) {
+  display: inline-block;
   color: rgb(49, 79, 185);
+  margin-top: 30px;
 }
 
 .ticket {
@@ -110,8 +119,8 @@ h2 a{
   right: 30px;
   bottom: 30px;
   background-color: rgb(182, 84, 42);
-  color: rgb(191, 236, 220);
-  padding: 0 15px;
+  color: white;
+  padding: 10px 20px;
   border-radius: 5px;
 }
 
@@ -132,8 +141,12 @@ h2 a{
   color: yellow;
 }
 
-h2 a:hover, .contenuti p a:hover {
+h2 a:hover, .contenuti a:not(.ticket):hover {
   text-decoration: underline;
+}
+
+.ticket:hover {
+  background-color: rgb(158, 81, 48);
 }
 
 #help a:hover {
