@@ -37,4 +37,4 @@ if (agereq < 18){
 }
 
 // page output
-document.getElementById('price').innerHTML = finalprice;
+document.getElementById('price').innerHTML = "Salve, per il suo tragitto dovrà spendere " + finalprice.toFixed(2) + " €";
