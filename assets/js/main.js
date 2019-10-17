@@ -13,28 +13,28 @@ NOTE:
 - parto con dei semplici log e se E SOLO SE tutto funziona e ho capito quello che ho fatto, vado a migliorare il mio output in pagina con html+css.*/
 
 // general
-var kmreq;
-var agereq;
-var priceway;
-var finalprice;
+var kmReq;
+var ageReq;
+var priceWay;
+var finalPrice;
 
 // km request
-kmreq = prompt("Ciao, quanti kilometri devi percorrere?");
+kmReq = prompt("Ciao, quanti kilometri devi percorrere?");
 
 // age request
-agereq = prompt("Quanti anni hai?");
+ageReq = prompt("Quanti anni hai?");
 
 // price way (0.21 €cent al km)
-priceway = kmreq * 0.21;
+priceWay = kmReq * 0.21;
 
 // setting discount
-if (agereq < 18){
-  finalprice = priceway - ((priceway * 20)/ 100);
-} else if (agereq > 65){
-  finalprice = priceway - ((priceway * 40)/ 100);
+if (ageReq < 18){
+  finalPrice = priceWay - ((priceWay * 20)/ 100);
+} else if (ageReq > 65){
+  finalPrice = priceWay - ((priceWay * 40)/ 100);
 }else {
-  finalprice = priceway;
+  finalPrice = priceWay;
 }
 
 // page output
-document.getElementById('price').innerHTML = "Salve, per il suo tragitto dovrà spendere " + finalprice.toFixed(2) + " €";
+document.getElementById('price').innerHTML = "Salve, per il suo tragitto dovrà spendere " + finalPrice.toFixed(2) + " €";

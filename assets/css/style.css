@@ -1,0 +1,171 @@
+/* general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../img/Trenino-rosso-del-Bernina-ph-Francesco-Rasero-eHabitat-IMG_E6712bis.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.nolistype {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* nav_lg_md */
+#nav_lg_md {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: rgb(20, 167, 145);
+  border-bottom: 3px solid rgb(49, 79, 185);
+}
+
+#nav_lg_md ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#nav_lg_md ul li a {
+  color: rgb(49, 79, 185);
+  font-weight: bold;
+}
+
+/* nav_sm_xs */
+#nav_sm_xs {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100px;
+  visibility: hidden;
+  background-color: rgb(20, 167, 145);
+  border-right: 3px solid rgb(49, 79, 185);
+}
+
+#nav_sm_xs ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+#nav_sm_xs ul li a {
+  color: rgb(49, 79, 185);
+  font-size: 30px;
+}
+
+/* main */
+#main {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.whitewall {
+  position: relative;
+  width: 50%;
+  margin: 20px auto;
+  background-color: white;
+  height: calc(100vh - 90px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.contenuti {
+  line-height: 50px;
+  text-align: center;
+}
+
+h2 a{
+  color: rgb(49, 79, 185);
+}
+
+#price {
+  font-weight: 16px;
+  color: red;
+}
+
+.contenuti p a {
+  color: rgb(49, 79, 185);
+}
+
+.ticket {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  background-color: rgb(182, 84, 42);
+  color: rgb(191, 236, 220);
+  padding: 0 15px;
+  border-radius: 5px;
+}
+
+/* help */
+#help a{
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  background-color: yellow;
+  color: rgb(49, 79, 185);
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+/* hover */
+#nav_lg_md ul li a:hover, #nav_sm_xs ul li a:hover {
+  color: yellow;
+}
+
+h2 a:hover, .contenuti p a:hover {
+  text-decoration: underline;
+}
+
+#help a:hover {
+  color: yellow;
+  background-color: rgb(49, 79, 185);
+}
+
+
+/* mediaqueries */
+
+@media all and (max-width:768px) {
+
+  #nav_lg_md {
+    visibility: hidden;
+  }
+
+  #nav_sm_xs {
+    visibility: visible;
+  }
+
+  #main {
+    margin-left: 100px;
+    margin-top: 0;
+    height: 100vh;
+  }
+
+  .whitewall {
+    width: 80%;
+  }
+
+  #help {
+    visibility: hidden;
+  }
+
+}
