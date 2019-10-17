@@ -86,12 +86,13 @@ a {
   justify-content: center;
   align-items: center;
   border-radius: 20px;
+  overflow: auto;
 }
 
 .contenuti {
   line-height: 20px;
-  /* text-align: center; */
   padding: 0 20px;
+  height: 100%;
 }
 
 h2{
